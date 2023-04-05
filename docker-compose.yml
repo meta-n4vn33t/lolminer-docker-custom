@@ -9,20 +9,20 @@ services:
     container_name: lolminer
     devices:
       - /dev/dri:/dev/dri
-    entrypoint: /lolminer/lolMiner --coin ETH --pool eth.2miners.com --port 2020 --user 0x74ba897f65f04008d8eff364efcc54b0a20e17eb.nvidia-docker --apihost 0.0.0.0 --apiport 4069
+    entrypoint: /lolminer/lolMiner --algo NEXA --pool pool.us.woolypooly.com --port 3124 --user <ADDRESS> --apihost 0.0.0.0 --apiport 4069
     profiles: ["amd"]
   lolminer-nvidia:
     build:
       context: .
       dockerfile: Dockerfile
-    image: compscidr/lolminer:nvidia-dev
+    image: nvidia/cuda:10.2-base
     container_name: lolminer
     profiles: ["nvidia"]
-    entrypoint: /lolminer/lolMiner --coin ETH --pool eth.2miners.com --port 2020 --user 0x74ba897f65f04008d8eff364efcc54b0a20e17eb.nvidia-docker --apihost 0.0.0.0 --apiport 4069
+    entrypoint: /lolminer/lolMiner --algo NEXA --pool pool.us.woolypooly.com --port 3124 --user <ADDRESS> --apihost 0.0.0.0 --apiport 4069
     deploy:
       resources:
         reservations:
           devices:
             - driver: nvidia
-              count: 1
+              count: 4
               capabilities: [gpu]
