@@ -1,4 +1,6 @@
-Temporarily stopping builds. Deployed builds are wokring fine.
+Temporarily stopping builds. 
+
+Deployed builds are working fine.
 
 ![https://github.com/meta-n4vn33t/lolminer-docker/actions/workflows/build.yml](https://github.com/compscidr/lolminer-docker/actions/workflows/build.yml/badge.svg)
 # lolminer-docker
