@@ -1,4 +1,4 @@
-![https://github.com/compscidr/lolminer-docker/actions/workflows/build.yml](https://github.com/compscidr/lolminer-docker/actions/workflows/build.yml/badge.svg)
+![https://github.com/meta-n4vn33t/lolminer-docker/actions/workflows/build.yml](https://github.com/compscidr/lolminer-docker/actions/workflows/build.yml/badge.svg)
 # lolminer-docker
 Tried to make it as simple as possible to run the miner without worrying about
 drivers or the mining software (at least on amd). The docker images are named as follows:
